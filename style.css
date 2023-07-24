@@ -1,0 +1,308 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+font-family: sans-serif;
+}
+.container-card{
+  background-image: url(./images/bg-main-mobile.png);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.containercard{
+display: flex;
+flex-direction: column;
+
+}
+.card1{
+position: relative;
+display: flex;
+align-items: end;
+justify-content: end;
+top: 20px;
+}
+.cvc-password{
+position: absolute;
+top: 44%;
+right: 60px;
+
+}
+.card2{
+  position: relative;
+  display: flex;
+  align-items: end;
+  top: -75px;
+  justify-content: start;
+  color: white;
+}
+.card-dates{
+position: absolute;
+top: 10px;
+height: 100%;
+left: 15px;
+}
+.name-card{
+position: absolute;
+bottom: 27px;
+margin-inline-start: 2rem;
+}
+.number-credit-card{
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  font-size: calc(1rem + 1vw);
+  word-spacing: 20px;
+}
+.date-venciment{
+  position: absolute;
+  left: 340px;
+  bottom: 27px;
+  }
+  
+.card1 img{
+  max-width: 80%;
+  height: auto;
+  margin-inline-end: 1rem;
+}
+.card2 img{
+  max-width: 80%;
+  height: auto;
+  margin-inline-start: 1rem;
+}
+.form-credit-card{
+display: flex;
+flex-direction: column;
+padding-inline: 40px;
+margin-block-start: -1rem;
+
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+}
+input{
+height: 50px;
+border-radius: 6px;
+border: 2px solid rgba(122, 118, 118, 0.2); 
+margin-block-start: 1rem;
+font-size: 1.2rem;
+}
+.cvc-year{
+display: flex;
+gap: 0 0.4rem;
+width: 100%;
+}
+.mes-input{
+width: 20%;
+text-align: center;
+}
+.cvc-input{
+  width: 60%;
+  text-align: center;
+
+}
+.anio-input{
+  width: 20%;
+  text-align: center;
+
+}
+
+  .input-submit{
+    background-color: rgb(23, 6, 93);
+    color: white;
+    height: 60px;
+    margin-block-start: 2rem;
+    margin-block-end:1rem ;
+  }
+  .mensagge-sucess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem 0;
+  }
+  .details-text-comfirm{
+  color: rgb(146, 146, 146);
+  }
+  .btn-continue{
+  border: 0;
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  background-color: rgb(23, 6, 93);
+  color: white;
+  font-weight: 700;
+  }
+@media screen and (min-width: 870px) {
+  .container-card{
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    flex-direction: row;
+
+  }
+  .card1 img{
+    max-width: 100%;
+    min-width: 350PX;
+    height: auto;
+    margin-inline-end: 1rem;
+  }
+  .date-venciment{
+    position: absolute;
+    left: 340px;
+    bottom: 27px;
+    }
+    
+  .card2 img{
+    max-width: 100%;
+    height: auto;
+    margin-inline-start: 1rem;
+  }
+  .containercard{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-block-start: 10rem;
+    margin-inline-start: 8rem;
+    }
+    .card1{
+      position: relative;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      order: 2;
+      }
+      .card2{
+        position: relative;
+        display: flex;
+        align-items: end;
+        top: -22px;
+        justify-content: start;
+        order: 1;
+      }
+      
+      .form-credit-card{
+        display: flex;
+        flex-direction: column;
+        margin-block-start:13rem;
+        margin-inline-start: 2rem;
+        width: 450px;
+        height:450px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        }
+        input{
+        height: 45px;
+        font-size: 1rem;
+        }
+        .input-submit{
+        height: 60px;
+        }
+        .mensagge-sucess{
+        margin-inline-end: 22rem;
+        }
+}
+
+@media screen and (max-width: 461px) {
+  .card-dates{
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    left: 15px;
+    width: 50px;
+    }
+    .name-card{
+    position: absolute;
+    bottom: 27px;
+    margin-inline-start: 2rem;
+    font-size: 0.8rem;
+    }
+    .number-credit-card{
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+      font-size: calc(0.7rem + 1vw);
+      word-spacing: 20px;
+    }
+    .date-venciment{
+      position: absolute;
+      bottom: 27px;
+      right: 100px;
+      font-size: 0.8rem;
+      }
+      .card1{
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        top: 20px;
+        }
+        .cvc-password{
+        position: absolute;
+        top: 44%;
+        right: 60px;
+        
+        }
+        .card2{
+          position: relative;
+          display: flex;
+          align-items: end;
+          top: -55px;
+          justify-content: start;
+          color: white;
+        }
+      
+}
+
+@media screen and (max-width: 340px) {
+  .card-dates{
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    left: 15px;
+    }
+    .name-card{
+    position: absolute;
+    bottom: 20px;
+    margin-inline-start: 2rem;
+    
+    font-size: 0.5rem;
+    }
+    .number-credit-card{
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+      font-size: calc(0.5rem + 1vw);
+      word-spacing: 20px;
+    }
+    .date-venciment{
+      position: absolute;
+      bottom: 20px;
+      right: 100px;
+      font-size: 0.5rem;
+      }
+      .card1{
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        top: 20px;
+        }
+        .cvc-password{
+        position: absolute;
+        top: 44%;
+        font-size: 0.9rem;
+        right: 55px;
+        
+        }
+        .card2{
+          position: relative;
+          display: flex;
+          align-items: end;
+          top: -40px;
+          justify-content: start;
+          color: white;
+        }
+}
